@@ -193,9 +193,53 @@ button{
 }
 
 .review-container{
-    margin: auto 15%;
+    margin: auto 20%;
 }
 
 
 /* Join section */
+
+.join-us{
+    height: 348px;
+    display: flex;
+}
+
+.CTA-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+    background-color: var(--bluecolor);
+    border-radius: 8px;
+    min-height: 150px;
+    padding: 0 5%;
+    margin: auto 15%;
+    color: var(--whitecolor);
+}
+
+.btn-CTA{
+    flex-shrink: 0;
+
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--whitecolor);
+    border-radius: 8px;
+}
+
+/* Footer */ 
+
+footer{
+    background-color: var(--darkcolor);
+    height: 100px;
+
+    display: flex;
+}
+
+.footer-text{
+    color: var(--whitecolor);
+    margin: auto ;
+}
 
