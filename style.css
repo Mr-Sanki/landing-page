@@ -131,6 +131,7 @@ button{
 /* OUR TEAM SECTION */
 .team{
     height: 489px;
+    
 }
 
 .title{
@@ -142,11 +143,12 @@ button{
 }
 .group-card{
     
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: start;
     gap: 50px;
+    
 }
 .card{
     height: min-content;
@@ -167,3 +169,33 @@ button{
     font-size: 16px;
     color: var(--darkcolor);
 }
+
+
+/* Review Section */
+
+.review{
+    height: 430px;
+    background-color: var(--greycolor);
+    display: flex;
+}
+
+.review-text{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+}
+
+.client-name{
+    font-size: 24px;
+    font-weight: 900;
+    text-align: right;
+}
+
+.review-container{
+    margin: auto 15%;
+}
+
+
+/* Join section */
+
