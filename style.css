@@ -126,3 +126,44 @@ button{
     box-shadow: 0px 0px 10px 1px #f1f1f1;
     transition: 500ms ease-in-out;
 }
+
+
+/* OUR TEAM SECTION */
+.team{
+    height: 489px;
+}
+
+.title{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    height: 60px;
+}
+.group-card{
+    
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+.card{
+    height: min-content;
+    width: min-content;
+}
+
+.card-img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #3882f6;
+}
+
+
+.card-text{
+    text-align: justify;
+    font-size: 16px;
+    color: var(--darkcolor);
+}
