@@ -96,15 +96,99 @@ h1{
     background-color: var(--bluecolor);
     color: var(--whitecolor);
     font-weight: 400;
-    padding: 5px 20px;
+    padding: 5px 25px;
+    border: none;
     border-radius: 8px;
+    flex-shrink: 0;
 }
 .btn:hover{
     box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
 
 }
 
-@media (max-width:1200px) {
+
+
+/* Team Section */
+
+.team{
+    padding: 20px 15% ;
+}
+.title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.group-card{
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.card{
+    width: 160px;
+    margin: 0 10px;
+}
+.card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 3px solid var(--bluecolor);
+    border-radius: 8px;
+}
+.card-text{
+    text-align: center;
+    
+}
+
+
+
+/*  Review section  */
+
+.review{
+    background-color: var(--greycolor);
+    padding: 20px 15%;
+}
+
+.review-text{
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+}
+
+.client-name{
+    font-weight: 900;
+    text-align: right;
+}
+
+/* Join Section */
+.join-us{
+    padding: 50px 15%;
+}
+
+.CTA-box{
+    background-color:var(--bluecolor);
+    color: var(--whitecolor);
+    border-radius: 8px;
+    padding: 10px 50px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.join-us .btn{
+    border: 1px solid #f1f1f1;
+}
+
+
+
+/* -------------- */
+ /* RESPONSIVITY */
+ @media (max-width:1200px) {
     .hero{
         flex-direction: column;
     }
@@ -112,15 +196,8 @@ h1{
 
 @media (max-width:750px){
     header{
-        padding: 0 5%;
+        padding: 5px 5%;
     }
-
-    #hero-img{
-        width: 100%;
-    }
-}
-
-@media (max-width:400px){
     nav{
         flex-direction: column;
         padding-bottom: 20px;
@@ -129,8 +206,40 @@ h1{
         width: 100vw;
         justify-content: space-evenly;
     }
+
+    #hero-img{
+        width: 100%;
+    }
+    .review{
+        padding: 20px 5%;
+    }
+    .CTA-box{
+        flex-direction: column;
+    }
+    .text-CTA{
+        text-align: center;
+    }
+}
+
+@media (max-width:400px){
+
+    .card{
+        margin-bottom: 10px;
+    }
     .nav-list{
         margin:0;
         
+    }
+    .review{
+        padding: 50px 5%;
+    }
+    .review-text{
+        font-size: 20px;
+    }
+    .join-us{
+        padding: 0;
+    }
+    .CTA-box{
+        border-radius: 0;
     }
 }
