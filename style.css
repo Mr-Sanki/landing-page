@@ -25,223 +25,112 @@ a {
     font-family: 'EB Garamond', serif;
     font-family: 'Roboto', sans-serif;
   */
-:root{
+
+:root {
     --darkcolor: #1f2937;
     --greycolor: #e5e7eb;
     --whitecolor: #f1f1f1;
-    --bluecolor:#3882f6;
-    
-  }
-
+    --bluecolor: #3882f6;
+}
 
 
 header{
+    padding: 0 15%;
     background-color: var(--darkcolor);
     color: var(--whitecolor);
-    min-height: 534px;
-    padding: 20px 15%;
-    
 }
+
+nav{
+    padding: 0 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo{
-    color: #f9faf8;
     font-size: 24px;
     font-weight: 900;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-bar ul{
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-}
-
-
-
-.hero img{
-    
-    object-fit: cover;
-
-    border-radius: 2px;
-    box-shadow: 0px 0px 10px 0px rgba(229, 231, 235, 0.1);  
-}
-#hero-img{
     flex-shrink: 0;
-    height: 235px;
-    width: 521px;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
 }
 
+.nav-list{
+    margin-left: 25px;
+    
+}
+.nav-list:hover{
+    color: var(--bluecolor);
+    text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.1);
+    transition: color 0.5s ease-in-out 0.1s;
+}
 
 .hero{
-    padding-top: 100px;
-    height: 400px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    gap: 20px;
-    
+    gap: 5px;
+
+    padding-bottom: 50px;
+}
+#hero-img{
+    width: 521px;
+    border-radius: 8px;
 }
 
-.nav-list, p{
-    font-size: 18px;
-    font-weight: 400;
-}
 h1{
     font-size: 48px;
     font-weight: 900;
-    line-height: 40px;
-
-    margin-bottom: 15px;
+    line-height: 1;
+}
+.hero p {
+    text-align: justify;
+    padding: 5px 0 8px 0;
+    font-size: 18;
+    font-weight: 400;
 }
 
-button{
-    margin-top:15px ;
-
+.btn{
     background-color: var(--bluecolor);
     color: var(--whitecolor);
     font-weight: 400;
-    font-size: 18px;
-}
-
-
-.btn-buy{
-    height: 36px;
-    width: 130px;
-    border: none;
+    padding: 5px 20px;
     border-radius: 8px;
 }
-
-.nav-list:hover{
-    color: var(--bluecolor);
-    transition: 500ms ease 100ms;
+.btn:hover{
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
 
 }
 
-.box-shadow:hover{
-    box-shadow: 0px 0px 10px 1px #f1f1f1;
-    transition: 500ms ease-in-out;
+@media (max-width:1200px) {
+    .hero{
+        flex-direction: column;
+    }
 }
 
+@media (max-width:750px){
+    header{
+        padding: 0 5%;
+    }
 
-/* OUR TEAM SECTION */
-.team{
-    height: 489px;
-    
+    #hero-img{
+        width: 100%;
+    }
 }
 
-.title{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 900;
-    height: 60px;
+@media (max-width:400px){
+    nav{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    ul{
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+    .nav-list{
+        margin:0;
+        
+    }
 }
-.group-card{
-    
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 50px;
-    
-}
-.card{
-    height: min-content;
-    width: min-content;
-}
-
-.card-img{
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 3px solid #3882f6;
-}
-
-
-.card-text{
-    text-align: justify;
-    font-size: 16px;
-    color: var(--darkcolor);
-}
-
-
-/* Review Section */
-
-.review{
-    height: 430px;
-    background-color: var(--greycolor);
-    display: flex;
-}
-
-.review-text{
-    font-size: 36px;
-    font-weight: 300;
-    font-style: italic;
-    text-align: justify;
-}
-
-.client-name{
-    font-size: 24px;
-    font-weight: 900;
-    text-align: right;
-}
-
-.review-container{
-    margin: auto 20%;
-}
-
-
-/* Join section */
-
-.join-us{
-    height: 348px;
-    display: flex;
-}
-
-.CTA-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    
-    background-color: var(--bluecolor);
-    border-radius: 8px;
-    min-height: 150px;
-    padding: 0 5%;
-    margin: auto 15%;
-    color: var(--whitecolor);
-}
-
-.btn-CTA{
-    flex-shrink: 0;
-
-    height: 30px;
-    width: 200px;
-    font-size: 14px;
-    font-weight: 400;
-    border: 1px solid var(--whitecolor);
-    border-radius: 8px;
-}
-
-/* Footer */ 
-
-footer{
-    background-color: var(--darkcolor);
-    height: 100px;
-
-    display: flex;
-}
-
-.footer-text{
-    color: var(--whitecolor);
-    margin: auto ;
-}
-
-
-
